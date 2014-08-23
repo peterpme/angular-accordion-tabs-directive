@@ -5,7 +5,7 @@
   "authors": [
     "Peter Piekarczyk <peterpiekarczyk@gmail.com>"
   ],
-  "description": "An AngularJS directive that allows allows you to use reusable components to use an accordion on mobile, or tab on desktop",
+  "description": "AngularJS directive that allows you to seamlessly create responsive tabs / accordion using angular",
   "keywords": [
     "accordion",
     "tabs",
