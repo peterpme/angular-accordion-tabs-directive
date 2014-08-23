@@ -2,6 +2,11 @@
 
 An angular directive that allows you to seamlessly integrate accordions on one breakpoint that will turn into tabs once a certain threshold is met.
 
+### Browser Support
+
+- IE10+ transitions
+- IE9+ without transitions (todo)
+
 ## Install
 
 Clone the repository and include it directly in your project. You can also use bower and install it as a dependency:
@@ -58,4 +63,6 @@ data-transform='1000'
 
 ### TODO
 
-Right now this works just fine if you reach a breakpoint on page load. I currently have a solution for automatically converting tabs to accordions and vice versa but I'm looking for a better solution. Stay tuned.
+-Modernizr Support for those looking for transitions. Currently transitions only work IE10+
+
+-Right now this works just fine if you reach a breakpoint on page load. I currently have a solution for automatically converting tabs to accordions and vice versa but I'm looking for a better solution. Stay tuned.
