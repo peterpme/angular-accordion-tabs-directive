@@ -12,7 +12,7 @@ bower install angular-accordion-tabs-directive
 
 Add the dependency in your Angular project dependency argument area:
 
-```
+```js
 var app = angular.module('myApp', [
   'angular-accordion-tabs-directive'
 ]);
@@ -20,9 +20,9 @@ var app = angular.module('myApp', [
 
 ## Usage
 
-Here is the general HTML used. You have two configuration options: 
+Here is the general HTML used. You have two configuration options:
 
-In the event that you want to use something besides active, you can do so by changing the value here: 
+In the event that you want to use something besides active, you can do so by changing the value here:
 ```
 data-activeClsName
 ```
@@ -39,11 +39,15 @@ data-transform
 
   <nav class='nav-tab'>
     <a class='nav-item active'>First Tab</a>
+    <a class='nav-item'>Second Tab</a>
   </nav>
 
   <div class='tab-container'>
   <a class='tab-header active'>First Tab</a>
   <div class='tab-section active'>Your First Tab Content</div>
+
+  <a class='tab-header'> Second Tab</a>
+  <div class='tab-section'> Your Second Tab Content</div>
   </div>
-  </div>
+</div>
 ```
