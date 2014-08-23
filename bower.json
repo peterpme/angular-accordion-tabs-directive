@@ -12,6 +12,7 @@
     "responsive"
   ],
   "dependencies" : {
+    angular: null
   },
   "license": "Apache",
   "ignore": [
