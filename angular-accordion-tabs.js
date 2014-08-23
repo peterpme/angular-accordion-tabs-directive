@@ -5,9 +5,9 @@
         var viewport = angular.element(window),
         navItems = [];
 
-        function Tab (container, transformWidth, activeClsName) {
+        function Tab (container, breakpoint, activeClsName) {
             this.container = container;
-            this.transformWidth = transformWidth;
+            this.breakpoint = breakpoint;
             this.activeClsName = activeClsName;
 
             this.tabs = angular.element('.tab-section', '.tab-container');
@@ -20,7 +20,7 @@
         Tab.prototype = {
 
             checkViewport: function () {
-                if (window.innerWidth < this.transformWidth) {
+                if (window.innerWidth < this.breakpoint) {
                     this.navItems = angular.element('.tab-header', '.tab-container');
                 } else {
                     this.navItems = angular.element('.nav-item', this.element);
@@ -71,10 +71,10 @@
         restrict: 'A',
         link: function (scope, element, attrs) {
 
-            var transformWidth = attrs.transform,
+            var breakpoint = attrs.breakpoint,
             activeClsName = attrs.activeclsname;
 
-            new Tab(element, transformWidth, activeClsName);
+            new Tab(element, breakpoint, activeClsName);
 
         }
     }
