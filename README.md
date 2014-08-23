@@ -6,7 +6,7 @@ An angular directive that allows you to seamlessly integrate accordions on one b
 
 Clone the repository and include it directly in your project. You can also use bower and install it as a dependency:
 
-```
+````
 bower install angular-accordion-tabs-directive
 ```
 
@@ -23,12 +23,14 @@ var app = angular.module('myApp', [
 Here is the general HTML used. You have two configuration options:
 
 In the event that you want to use something besides active, you can do so by changing the value here:
-```
+
+```html`
 data-activeClsName='differentActiveName'
 ```
 
-You can set the breakpoint from mobile to desktop by using 
-```
+You can set the breakpoint from mobile to desktop by using:
+
+```html
 data-transform='1000'
 ```
 
@@ -53,3 +55,7 @@ data-transform='1000'
   </div>
 </div>
 ```
+
+### TODO
+
+Right now this works just fine if you reach a breakpoint on page load. I currently have a solution for automatically converting tabs to accordions and vice versa but I'm looking for a better solution. Stay tuned.
