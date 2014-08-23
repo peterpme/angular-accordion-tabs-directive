@@ -1,0 +1,24 @@
+{
+  "name": "angular-accordion-tabs",
+  "main": "angular-accordion-tabs.js",
+  "version": "0.9.0",
+  "authors": [
+    "Peter Piekarczyk <peterpiekarczyk@gmail.com>"
+  ],
+  "description": "An AngularJS directive that allows allows you to use reusable components to use an accordion on mobile, or tab on desktop",
+  "keywords": [
+    "accordion",
+    "tabs",
+    "responsive"
+  ],
+  "dependencies" : {
+  },
+  "license": "Apache",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
