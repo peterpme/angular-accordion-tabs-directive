@@ -1,18 +1,31 @@
 <!DOCTYPE HTML>
-<html ng-app='test'>
+<html ng-app='example'>
 <head>
-  <title>Hello</title>
+  <title>Angular Accordion Tabs Directive Example</title>
 
   <style>
+    .tab-header.active,
     .nav-item.active {
       font-weight: bold;
     }
-    
-    .tab-section {
+
+    .tab-section.active,
+    .tab-header {
+      display: block;
+    }
+
+    .tab-section,
+    .nav-item {
       display: none;
     }
-    .tab-section.active {
-      display: block;
+
+    @media (min-width: 1000px) {
+      .tab-header {
+        display: none;
+      }
+      .nav-item {
+        display: block;
+      }
     }
   </style>
 </head>
@@ -27,7 +40,7 @@
       </nav>
       
       <div class='tab-container'>
-        <a class='tab-header' href="#">First Tab</a>
+        <a class='tab-header active' href="#">First Tab</a>
         <div class='tab-section active'>scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
         <a class='tab-header' href="#">Second Tab</a>
         <div class='tab-section'>ke a type specimen book. It has survived not  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1961s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
@@ -39,8 +52,9 @@
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://code.angularjs.org/1.2.21/angular.js"></script>
 <script src='angular-accordion-tabs.js'></script>
+
 <script>
-  var app = angular.module('test', ['angular-accordion-tabs-directive']);
+  var app = angular.module('example', ['angular-accordion-tabs-directive']);
 </script>
 </body>
 </html>

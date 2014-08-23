@@ -1,6 +1,6 @@
 (function () {
-    angular.module('angular-accordion-tabs-directive', []).
-    directive('angularAccordionTabs', [function () {
+    angular.module('angular-accordion-tabs-directive', [])
+    .directive('angularAccordionTabs', [function () {
 
         var viewport = angular.element(window),
         navItems = [];
@@ -20,15 +20,11 @@
         Tab.prototype = {
 
             checkViewport: function () {
-
-
                 if (window.innerWidth < this.transformWidth) {
-                    console.log('less');
                     this.navItems = angular.element('.tab-header', '.tab-container');
                 } else {
                     this.navItems = angular.element('.nav-item', this.element);
                 }
-
             },
 
             bindEvents: function () {
