@@ -24,13 +24,15 @@ Here is the general HTML used. You have two configuration options:
 
 In the event that you want to use something besides active, you can do so by changing the value here:
 ```
-data-activeClsName
+data-activeClsName='differentActiveName'
 ```
 
-You can set the breakpoint from mobile to desktop by using
+You can set the breakpoint from mobile to desktop by using 
 ```
-data-transform
+data-transform='1000'
 ```
+
+**Note: Both these parameters are required, not optional.**
 
 ## Html Structure
 
